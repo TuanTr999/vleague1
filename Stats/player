@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=     <!-- PLAYER -->
+
+    <div id="PLAYER" class="tab-pane fade">
+    <div class="row">
+        <!-- PLAYER GOALS-->
+        <div class="col-12 col-xl-4 col-lg-4 leftItem">
+            <div class="goal overviewgoals2">
+                <div class="title">
+                    <span>Goals</span>
+                </div>
+                <div>
+                    <img src="img/RAFAEL-removebg-preview.png" alt="">
+                </div>
+                <div class="footer overviewplayer">
+                    <img src="img/Bình Định FC.png" alt="">
+                    <span>1</span>
+                    <span class="line">Rafaelson</span>
+                    <span class="value overviewplayergoals">16</span>
+                </div>
+                <div class="">
+                    <img src="img/Bình Định FC.png" alt="">
+                    <span class="line">Rafaelson</span>
+                    <span class="value overviewplayergoals">16</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLAYER ASSISTS -->
+        <div class="col-12 col-xl-4 col-lg-12 centerItem">
+            <div class="goal playerassists">
+                <div class="title">
+                    <span>Shots</span>
+                </div>
+
+                <div class="footer">
+                    <span class="line">FC Bayern Munich</span>
+                    <span class="value">1</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player own -->
+        <div class="col-12 col-xl-4 col-lg-12 rightItem">
+            <div class="goal playerown">
+                <div class="title">
+                    <span>Penalties</span>
+                </div>
+
+                <div class="footer">
+                    <span class="line">TSG</span>
+                    <span class="value">1</span>
+                </div>
+            </div>
+        </div>    
+
+        <div class="col-12 col-xl-4 col-lg-12 leftItem">
+            <div class="goal won">
+                <div class="title">
+                    <span>Duels Won</span>
+                </div>
+                <div class="footer">
+                <span class="line">DortMund</span>
+                    <span class="value">1</span>
+                </div>
+            </div>
+        </div>
+    
+
+   
+        <div class="col-12 col-xl-4 col-lg-12 centerItem">
+            <div class="goal">
+                <div class="title">
+                    <span>Goal</span>
+                </div>
+
+                <div class="footer">
+                    <span class="line">FC Bayern Munich</span>
+                    <span class="value">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-4 col-lg-12 rightItem">
+            <div class="goal shot">
+                <div class="title">
+                    <span>Shots</span>
+                </div>
+                <div class="footer">
+                    <span class="line">FC Bayern Munich</span>
+                    <span class="value">1</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

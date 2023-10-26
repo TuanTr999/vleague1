@@ -1,0 +1,360 @@
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .clubNavigation .clubList{
+        gap: 0.5rem;
+    }
+    .clubNavigation {
+        padding: 0rem 0 0rem 15rem;
+        height: 50px;
+    }
+    .masthead {
+        height: 100px;
+    }
+    .clubList .clubList__club {
+        width: 40px;
+        height: 40px;
+    }
+    .masthead .navContainer {
+        top: 50px;
+        height: 50px;
+        width: 85%;
+        padding: 0 2rem;
+        gap: 1rem;
+    }
+    .search-container {
+        margin-top: -30px;
+    }
+    .search-smaller .search-label {
+        height: 50px;
+    }
+    .suggested-divide {
+        margin-top: 2rem;
+    }
+    .masthead .logo-container {
+        width: 10rem;
+        left: 1rem;
+    }
+    .navContainer .nav-list li{
+        font-size: 1.4rem;
+    }
+    .navContainer-right .navContainer-more {
+        font-size: 1.4rem;
+    }
+    .navContainer-right {
+        gap: 1rem;
+    }
+    .navContainer .nav-list {
+        gap: 2rem;
+    }
+    .hightlight-kk {
+        background-color: transparent;
+        height: 100%;
+        box-sizing: border-box;
+        color: #000000;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100%/2) - 2rem);
+        overflow: hidden;
+        gap: 2.6rem;
+    }
+    .imageGallerySmall {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100%/1) - 1.2rem);
+        /* display: flex; */
+        gap: 3rem;
+        overflow: hidden;
+    }
+    .imageGallerySmall {
+        width: 100%;
+    }
+    .sideBar {
+        width: 25%;
+        right: 1rem;
+    }
+    .news {
+        display: block;
+        padding: 1rem 4rem;
+    }
+    .main-news {
+        width: 100%;
+    }
+    .main-news-image {
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .sub-news-image {
+        border-radius: 10px;
+        height: auto;
+        width: 350px;
+    }
+    .sub-news-item {
+        display: flex;
+        gap: 2rem;
+    }
+    .table-container {
+        width: 25%;
+        right: 1rem;
+    }
+    .sideBar-footer button {
+        font-size: 1.5rem;
+    }
+    .table-footer button {
+        font-size: 1.5rem;
+    }
+
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .container-form {
+        margin-top: 0;
+    }
+    .cont-tit h1 {
+        font-size: 4rem;
+        width: 100%;
+    }
+    .sub-head {
+        display: flex;
+    }
+    .masthead {
+        display: none;
+    }
+    .sideBar{
+        width: 80%;
+        top: 11rem;
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0;
+    }
+    .table-container {
+        display: none;
+    }
+    .news {
+        width: 100%;
+        display: block;
+        padding: 1rem;
+    }
+    .main-news {
+        width: 300px;
+        height: 200px;
+    }
+    .main-news h2 {
+        font-size: 1.6rem;
+    }
+    .sub-news {
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+    .sub-news-image {
+        width: 100%;
+    }
+    .search-container .suggestedPlayers-list{
+        display: none;
+        
+    }
+    .search-container {
+        margin-top: -30px;
+    }
+    .navContainer-more {
+        display: none;
+    }
+    .hightlight-kk-container {
+        margin-top: 30rem;
+    }
+    .hightlight-kk {
+        grid-auto-columns: calc((100%/1) - 1.2rem);
+    }
+    .fanpage-facebook-container {
+        display: none;
+    }
+    .trailer-vleague-container {
+        display: none;
+    }
+    .major-donors {
+        display: none;
+    }
+    .major-donors-title {
+        display: none;
+    }
+    .imageGalleryContainer {
+        width: auto;
+    }
+    .sub-news-item {
+        display: flex;
+        gap: 3rem;
+    }
+    .sub-news-item .sub-news-image {
+        height: 50px;
+        width: 150px;
+        border-radius: 0;
+    }
+    .sub-news-content .news-content-res {
+        display: none;
+    }
+    .sub-news-content .news-title {
+        padding: 0;
+    }
+    .main-news {
+        width: 100%;
+    }
+    .main-news-image {
+        border-radius: 0;
+    }
+    .news-title {
+        width: 100%;
+    }
+    .hightlight-kk-container {
+        margin: 0;
+    }
+    .news-title-1 {
+        margin-top: 90rem;
+    }
+    .footer-header-list {
+        display: block;
+        box-sizing: border-box;
+        padding-left: 4rem;
+    }
+    .footer-content-infor {
+        display: block;
+    }
+    .footer-content {
+        display: block;
+    }
+    .follow-us-list {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .follow-us-item + .follow-us-item {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container-form {
+        margin-top: 0;
+    }
+    .cont-tit h1 {
+        font-size: 2rem;
+    }
+    .main-news {
+        width: 100%;
+        height: 300px;
+    }
+    .main-news-td {
+        font-size: 1.6rem;
+    }
+    .masthead {
+        display: none;
+    }
+    .sub-head {
+        display: flex;
+    }
+    .suggestedSearch h2 {
+        font-size: 2rem;
+    }
+    .suggested-divide {
+        display: none;
+    }
+    .search-smaller {
+        width: 90%;
+    }
+    .search-label input{
+        height: 40px;
+    }
+    .suggestedSearch {
+        display: none;
+    }
+    .hightlight-kk-container {
+        width: 100%;
+    }
+    .hightlight-kk {
+        grid-auto-columns: 100%;
+    }
+    .sideBar-title {
+        display: block;
+    }
+    .tabbedHome {
+        margin-top: 0;
+    }
+    .news {
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .news-content {
+        display: none;
+    }
+    .sideBar {
+        width: 100%;
+        right: 0;
+        left: 0;
+        position: relative;
+        bottom: 0;
+    }
+    .sideBar-footer button {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+    .table-container {
+        display: none;
+    }
+    .news-title {
+        margin-top: 1rem;
+        width: 100%;
+        padding: 0;
+    }
+    .footer-header-list {
+        display: block;
+        box-sizing: border-box;
+        padding-left: 4rem;
+    }
+    .footer-content-infor {
+        display: block;
+    }
+    .footer-content {
+        display: block;
+    }
+    .image-gallery {
+        height: 170px;
+    }
+    .major-donors {
+        width: 100%;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+    .major-donors-img {
+        width: 100%;
+    }
+    .trailer-vleague-container, .signInTTN-container {
+        display: none;
+    }
+    .describe-container {
+        padding: 0;
+    }
+    .donors-container {
+        padding: 0;
+    }
+    .main-dn {
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+    .sub-dn {
+        padding: 2rem 0;
+    }
+    .footer-content .follow-us .follow-us-list{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .follow-us-item + .follow-us-item {
+        margin: 0;
+    }
+    .follow-us {
+        padding: 0;
+    }
+    .follow-us-item::after {
+        display: none;
+    }
+    .fte-text p{
+        font-size: 1rem;
+    }
+}

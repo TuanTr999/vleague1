@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+.cont-tit h1 {
+    margin: 0;
+    font-size: 7rem;
+    background-image: url('./project_image/bgr-text.jpg');
+    background-position: bottom;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: white;
+    font-weight: 900;
+}
+.container-fluid.p-5.text-white {
+    background-image: linear-gradient(90deg, #e21c34, #ef88bb);
+}
+.container-form {
+    margin-top: 70px;
+}
+.title1 {
+    font-size: 6vw;
+}
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+th, td {
+    padding: 0 1rem;
+    text-align:center;
+    border: 1px solid #968c8c7b;
+    font-size: 1.6rem;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+.tr-head th {
+    background: red;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+.text-l {
+    text-align: left;
+}
+.img-logo {
+    width: 30px;
+    height: 30px;
+}
+.logo-text {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 6px;
+}
+
+.img-logo-next {
+    width: 30px;
+    height: 30px;
+}

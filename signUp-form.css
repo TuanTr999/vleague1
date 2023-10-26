@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    padding: 0;
+    margin:  0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+}
+.cont-tit h1 {
+    margin: 0;
+    font-size: 7rem;
+    background-image: url('./project_image/bgr-text.jpg');
+    background-position: bottom;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: white;
+    font-weight: 900;
+}
+.container-fluid.p-3.text-black {
+    align-items: center;
+    text-align: center;
+    background-color: #bf5757;
+    margin-top: 10px;
+}
+.container-fluid.p-3 span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.title-form {
+    font-size: 16px;
+    position: relative;
+}
+.title-form::before {
+    position: absolute;
+    display: block;
+    content: "*";
+    color: red;
+    top: 0;
+    right: -1rem;
+    font-size: 1.8rem;
+}
+
+.button-f {
+    height: 30px;
+    margin-left: 7%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-radius: 1000px;
+}
+.tittle-but {
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+.row {
+    border-radius: 10px;
+}
+/*  */
+ .cont-input input {
+    width: 100%;
+} 
+.cont-input {
+    width: 100%;
+    background-color: #e8e8e8;;
+    border-radius: 5px;
+}
+.cont-input input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: lighter;
+    font-size: 1.6rem;
+    color: #000;
+    padding: 1.5rem 1rem;
+}
+
+.cont-input input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+.form-control.button-f {
+    border-radius: 1000px;
+    background-color: #0D6EFD;
+    color: white;
+}
+.cont-word-button{
+    margin-top: 1000px;
+    height: 40px;
+    align-items: center;    
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #0D6EFD;
+    border: none;
+    color: white;
+}
+.row button {
+    margin-top: 20px;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+}
+.container-fluid.p-5.text-white {
+    background-image: linear-gradient(to right, rgb(158, 38, 38), rgb(240, 102, 125));
+}
+.container-form {
+    margin-top: 70px;
+}
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.form1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-form {
+    width: 320px;
+    height: 120px;
+}
+#gender {
+    font-size: 16px;
+    padding: 1.2rem 0;
+}
+.text-center {
+    position: relative;
+    padding: 0;
+    font-weight: 600;
+}
+.text-center::after {
+    display: block;
+    position: absolute;
+    width: 150px;
+    display: block;
+    content: "";
+    height: 1px;
+    background: red;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-res {
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 600;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #0D6EFD;
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+    color: #fff;
+    position: relative;
+    text-shadow: 1px 1px 10px black;
+}
+.btn-res:hover {
+    box-shadow: 0px 0px 0 0 black;
+    transform: translateY(0) translateX(0);
+}
+.btn-res::after{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: red;
+    display: flex;
+    content: "Click now";
+    font-size: 2rem;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    transition: width 400ms ease;
+    overflow: hidden;
+    text-shadow: 1px 1px 10px black;
+}
+.btn-res:hover::after {
+    width: 100%;
+}
+.backgr-r {
+    border: 1px solid #0D6EFD;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 50px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .container-form {
+        margin-top: 0;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .container-form {
+        margin-top: 0;
+    }
+    .cont-tit h1 {
+        font-size: 4rem;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .container-form {
+        margin-top: 40px;
+    }
+    
+}

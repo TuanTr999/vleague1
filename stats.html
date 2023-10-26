@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats Vleague</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Stats.css">
+  <link rel="stylesheet" href="nav-project.css">
+  <link rel="stylesheet" href="footer-prj.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="sub-head.css">
+  <link rel="stylesheet" href="project.css">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="sub-search">
+    <div  onclick=hideSubXmark() class="sub-xmark"><i class="fa-solid fa-xmark sub-xmark-icon"></i></div>
+    <input type="text" placeholder="Search here..."><i class="fa-solid fa-magnifying-glass"></i>
+  </div>
+  <div class="sub-head">
+    <div onclick="showSubHead()" class="icon-bars sub-head-item"><i class="fa-solid fa-bars"></i></div>
+    <div class="sub-head-logo">
+      <a href="index.html"><img src="./project_image/vpf.png" alt=""></a>
+    </div>
+    <div class="sub-head-right">
+      <a href="login-form-prj.html"><div class="sub-head-user sub-head-item"><i class="fa-solid fa-user"></i></div></a>
+      <div  onclick="showSubSearch()" class="sub-head-search sub-head-item">
+        <i class="fa-solid fa-magnifying-glass sub-glass"></i>
+      </div>
+    </div>
+  </div>
+  <div class="sub-menu">
+    <div onclick="closeSubHead()" class="sub-menu-head"><i class="fa-solid fa-xmark"></i></div>
+    <div class="sub-menu-content">
+      <ul class="sub-menu-list">
+        <li class="sub-active hover-list"><a href="#">Home</a></li>
+        <li class="hover-list"><a href="club.html">Clubs</a></li>
+        <li class="hover-list"><a href="sche2.html">Fixtures</a></li>
+        <li class="hover-list"><a href="#">News</a></li>
+        <li class="hover-list"><a href="table.html">Tables</a></li>
+        <li class="hover-list"><a href="stats.html">Stats</a></li>
+        <li class="hover-list"><a href="#">Highlights</a></li>
+        <input type="checkbox" name="check-menu" id="check-menu">
+        <li class="hover-list more-hover-list"><label for="check-menu">More <i class="fa-solid fa-caret-right sub-fa-caret-right"></i></label>
+          <ul class="sub-more">
+            <li class="sub-more-list"><a href="#donors">Nhà tài trợ</a></li>
+            <li class="sub-more-list"><a href="#">Cầu thủ của trận</a></li>
+            <li class="sub-more-list"><a href="#">Huấn luyện viên</a></li>
+            <li class="sub-more-list"><a href="#">Trọng tài</a></li>
+            <li class="sub-more-list"><a href="#">Câu hỏi thường gặp</a></li>
+            <li class="sub-more-list"><a href="#">Thư viện</a></li>
+            <li class="sub-more-list"><a href="#">Nhà tài trợ</a></li>
+            <li class="sub-more-list"><a href="#">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu-user"><a href="./login-form-prj.html"><i class="fa-solid fa-user"></i> LOGIN</a></li>        
+      </ul>
+    </div>
+  </div>
+  <header class="masthead">
+    <nav class="clubNavigation">
+      <h4 class="clubSiteHeader">Club Sites <i class="fa-solid fa-arrow-up-right-from-square"></i></h4>
+      <ul class="clubList">
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/binh-duong-2021-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/cong-an-ha-noi-fc-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/haiphongfc-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/HNFC-6-sao-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/HAGL-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Logo-Ha-Tinh-update-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Khanh-Hoa-FC-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Logo-CLB-Dong-A-Thanh-Hoa_chuan-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Quang-Nam-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/HCM-FC-2023-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Logo-Viettel-FC-JPG-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Nam-Dinh-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/slna-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Binh-Dinh-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+      </ul>
+    </nav>
+    <div class="logo-container">
+      <a href="index.html">
+        <div class="logo">
+          <img src="./project_image/project_image.png" alt="">
+      </a>
+    </div>
+    <div class="navContainer">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="club.html">Clubs</a></li>
+        <li><a href="sche2.html">Fixtures</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="table.html">Tables</a></li>
+        <li class="active"><a href="stats.html">Stats</a></li>
+        <li><a href="#">Highlight</a></li>
+      </ul>
+      <div class="navContainer-right">
+        <div class="navContainer-more">
+          <p>More <i class="fa-solid fa-caret-up fa-rotate-180"></i></p>
+          <ul class="submore">
+            <li><a href="#">Nhà tài trợ</a></li>
+            <li><a href="#">Cầu thủ của trận</a></li>
+            <li><a href="#">Huấn luyện viên</a></li>
+            <li><a href="#">Trọng tài</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+            <li><a href="#">Thư viện</a></li>
+            <li><a href="#">Nhà tài trợ</a></li>
+            <li><a href="#">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="navContainer-user"><a href="login-form-prj.html"><i class="fa-solid fa-user"></i></a></div>
+        <div class="divider"></div>
+        <div class="navContainer-search"><i id="search-btn" class="fa-solid fa-magnifying-glass"
+            onclick=showSearch()></i>
+          <i id="xmark-btn" class="fa-solid fa-xmark fa-xmark-search" onclick=showXmark()></i>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="search-container">
+    <div class="search-smaller">
+      <div class="search-label">
+        <input type="text" placeholder="Search for News, Players and Clubs">
+        <div class="divide-search"></div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="suggested-divide"></div>
+      <div class="suggestedSearch">
+        <div class="suggestedInfor">
+          <h2>Suggested Search</h2>
+          <div class="suggestedInfor-list">
+            <a href="#">
+              <p>Lịch thi đấu mới nhất</p>
+            </a>
+            <a href="#">
+              <p>Cầu thủ của tháng</p>
+            </a>
+            <a href="#">
+              <p>Cầu thủ của trận đấu</p>
+            </a>
+            <a href="#">
+              <p>Vé</p>
+            </a>
+            <a href="#">
+              <p>Giải đấu</p>
+            </a>
+          </div>
+        </div>
+        <div class="suggested-divide"></div>
+        <div class="suggestedPlayers">
+          <h2>Player</h2>
+          <div class="suggestedPlayers-list">
+            <a href="#">
+              <p>Nguyễn Hoàng Đức</p>
+            </a>
+            <a href="#">
+              <p>Đặng Văn Lâm</p>
+            </a>
+            <a href="#">
+              <p>Nguyễn Văn Quyết</p>
+            </a>
+            <a href="#">
+              <p>Đoàn Văn Hậu</p>
+            </a>
+            <a href="#">
+              <p>Rafaelson</p>
+            </a>
+            <a href="#">
+              <p>Bùi Tiến Dũng</p>
+            </a>
+            <a href="#">
+              <p>Phạm Tuấn Hải</p>
+            </a>
+          </div>
+        </div>
+        <div class="suggested-divide"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="container-fluid">
+      <div class="main">
+        <div class="row">
+          <div class="col-12 col-lg-10">
+            <div class="head1">
+              <h1>V.League 1 Stats 2023-2024</h1>
+              <img src="https://www.bundesliga.com/assets/stats/powered-by-aws.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- Danh muc -->
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#OVERVIEW">OVERVIEW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#PLAYER">PLAYERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#CLUBS">CLUBS</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+
+          <!-- OVERVIEW -->
+
+          <div id="OVERVIEW" class="tab-pane fade show active">
+
+            <!-- Overview Clubs -->
+            <div class="row">
+              <div class="col-12">
+                <div class="head2">
+                  <h2>CLUB STATS</h2>
+                  <a href="#">ALL CLUB STATS &#10230;</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Overview goals -->
+              <div class="col-12 col-xl-3 col-lg-6 leftItem">
+                <div class="goal overviewgoals">
+                  <div class="title">
+                    <h2>Goals</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/CAHN.png" alt="">
+                  </div>
+
+                  <div class="footer">
+                    <span class="line">Công an Hà Nội</span>
+                    <span class="value ">30</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Overview wins -->
+              <div class="col-12 col-xl-3 col-lg-6 rightItem">
+                <div class="goal overviewwins">
+                  <div class="title">
+                    <h2>Wins</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/HN.png" alt="">
+                  </div>
+                  <div class="footer">
+                    <span class="line">Hà Nội</span>
+                    <span class="value">11</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Overview losses -->
+              <div class="col-12 col-xl-3 col-lg-6 leftItem">
+                <div class="goal overviewlosses">
+                  <div class="title">
+                    <h2>Losses</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/TPHCM.png" alt="">
+                  </div>
+                  <div class="footer">
+                    <span class="line">TP Hồ Chí Minh</span>
+                    <span class="value">11</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Overview Red Cards -->
+              <div class="col-12 col-xl-3 col-lg-6 leftItem">
+                <div class="goal clubsred">
+                  <div class="title">
+                    <h2>Red Cards</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/HAGL.png" alt="">
+                  </div>
+
+                  <div class="footer">
+                    <span class="line">Hoàng Anh Gia Lai</span>
+                    <span class="value ">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Overview Player -->
+            <div class="row">
+              <div class="col-12">
+                <div class="head2">
+                  <h2>PLAYER STATS</h2>
+                  <a href="#">ALL CLUB STATS &#10230;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Overview Player Goals -->
+              <div class="col-12 col-xl-3 col-lg-6 leftItem">
+                <div class="goal overviewgoals2">
+                  <div class="title">
+                    <h2>Goals</h2>
+                  </div>
+                  <div>
+                    <img src="img/RAFAEL-removebg-preview.png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/Bình Định FC.png" alt="">
+                    <span class="line">Rafaelson</span>
+                    <span class="value overviewplayergoals">13</span>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Overview Player Assists -->
+              <div class="col-12 col-xl-3 col-lg-6 rightItem">
+                <div class="goal overviewassist">
+                  <div class="title">
+                    <h2>Assists</h2>
+                  </div>
+                  <div>
+                    <img src="img/HoangDuc-removebg-preview (1).png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/VIettel.png" alt="">
+                    <span class="line">Nguyễn Hoàng Đức</span>
+                    <span class="value overviewplayerassist">6</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Overview Player Clean -->
+              <div class="col-12 col-xl-3 col-lg-6 leftItem">
+                <div class="goal overviewclean">
+                  <div class="title">
+                    <h2>Clean sheets</h2>
+                  </div>
+                  <div>
+                    <img src="img/DangVanLam-removebg-preview (1).png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/Nam Định.png" alt="">
+                    <span class="line">Đặng Văn Lâm</span>
+                    <span class="value overviewplayerpasses">8</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Overview Player Pen -->
+              <div class="col-12 col-xl-3 col-lg-6 rightItem">
+                <div class="goal overviewpenalties">
+                  <div class="title">
+                    <h2>Penalties</h2>
+                  </div>
+                  <div>
+                    <img src="img/VanQuyet-removebg-preview (1).png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/HN.png" alt="">
+                    <span class="line">Nguyễn Văn Quyết</span>
+                    <span class="value overviewplayerpenalties">3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLAYER -->
+
+          <div id="PLAYER" class="tab-pane fade">
+            <div class="row">
+              <!-- PLAYER GOALS-->
+              <div class="col-12 col-xl-4 col-lg-4 leftItem">
+                <div class="goal overviewgoals2">
+                  <div class="title">
+                    <span>Goals</span>
+                  </div>
+                  <div>
+                    <img src="img/RAFAEL-removebg-preview.png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/Bình Định FC.png" alt="">
+                    <span style="font-size: 20px; font-weight: bold;">1</span>
+                    <span class="line">Rafaelson</span>
+                    <span class="value overviewplayergoals">13</span>
+                  </div>
+
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Bruno Cantanhede</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Thanh Hoa.png" alt="">
+                      <span class="valuetopplayer">11</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Nguyễn Văn Quyết</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">09</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Hoàng Vũ Samson</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/TPHCM.png" alt="">
+                      <span class="valuetopplayer">08</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Phạm Tuấn Hải</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">06</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allplayergoal.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- PLAYER ASSISTS -->
+              <div class="col-12 col-xl-4 col-lg-4 centerItem">
+                <div class="goal overviewassist">
+                  <div class="title">
+                    <span>Assists</span>
+                  </div>
+                  <div>
+                    <img src="img/HoangDuc-removebg-preview (1).png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/VIettel.png" alt="">
+                    <span style="font-size: 20px; font-weight: bold;">1</span>
+                    <span class="line">Nguyễn Hoàng Đức</span>
+                    <span class="value overviewplayerassist">6</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Nguyễn Hải Huy</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HaiPhong.png" alt="">
+                      <span class="valuetopplayer">5</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Nguyễn Thái Sơn</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Thanh Hoa.png" alt="">
+                      <span class="valuetopplayer">4</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Nguyễn Văn Quyết</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">4</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Hà Văn Phương</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/CAHN.png" alt="">
+                      <span class="valuetopplayer">2</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allplayerassist.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Player Clean sheet -->
+              <div class="col-12 col-xl-4 col-lg-4 rightItem">
+                <div class="goal overviewclean">
+                  <div class="title">
+                    <span>Clean sheets</span>
+                  </div>
+                  <div>
+                    <img src="img/DangVanLam-removebg-preview (1).png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/Nam Định.png" alt="">
+                    <span style="font-size: 20px; font-weight: bold;">1</span>
+                    <span class="line">Đặng Văn Lâm</span>
+                    <span class="value overviewplayerpasses">8</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Phạm Văn Phong</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/VIettel.png" alt="">
+                      <span class="valuetopplayer">8</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Trần Nguyên Mạnh</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Nam Định.png" alt="">
+                      <span class="valuetopplayer">7</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Bùi Tấn Trường</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">5</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Phan Văn Biểu</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/SHB.png" alt="">
+                      <span class="valuetopplayer">3</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allplayercleansheets.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Player speed -->
+              <div class="col-12 col-xl-4 col-lg-4 leftItem">
+                <div class="goal overviewtopspeed">
+                  <div class="title">
+                    <span>Top speed (km/h)</span>
+                  </div>
+                  <div>
+                    <img src="img/TuanHai-removebg-preview (1).png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/HN.png" alt="">
+                    <span style="font-size: 20px; font-weight: bold;">1</span>
+                    <span class="line">Phạm Tuấn Hải</span>
+                    <span class="value overviewplayerspeed">30</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Rafaelson</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Bình Định FC.png" alt="">
+                      <span class="valuetopplayer">28.5</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Lucão do Break</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/SHB.png" alt="">
+                      <span class="valuetopplayer">26</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Rimario Gordon</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">25</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Nguyễn Tiến Linh</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/BinhDUong.png" alt="">
+                      <span class="valuetopplayer">24.5</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allplayertopspeed.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Player own -->
+              <div class="col-12 col-xl-4 col-lg-4 centerItem">
+                <div class="goal overviewown">
+                  <div class="title">
+                    <span>Own Goals</span>
+                  </div>
+                  <div>
+                    <img src="img/BuiTienDung-removebg-preview (1).png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/VIettel.png" alt="">
+                    <span style="font-size: 20px; font-weight: bold;">1</span>
+                    <span class="line">Bùi Tiến Dũng</span>
+                    <span class="value overviewplayerown">2</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Đoàn Văn Hậu</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/CAHN.png" alt="">
+                      <span class="valuetopplayer">2</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Marcão Silva</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">1</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Jonny Campbell</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/TPHCM.png" alt="">
+                      <span class="valuetopplayer">1</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Nguyễn Tiến Linh</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/BinhDUong.png" alt="">
+                      <span class="valuetopplayer">1</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allplayerowngoals.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Player penalties -->
+              <div class="col-12 col-xl-4 col-lg-4 centerItem">
+                <div class="goal overviewpenalties">
+                  <div class="title">
+                    <span>Penalties</span>
+                  </div>
+                  <div>
+                    <img src="img/VanQuyet-removebg-preview (1).png" alt="">
+                  </div>
+                  <div class="footer overviewplayer">
+                    <img src="img/HN.png" alt="">
+                    <span style="font-size: 20px; font-weight: bold;">1</span>
+                    <span class="line">Nguyễn Văn Quyết</span>
+                    <span class="value overviewplayerpenalties">3</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Rafaelson</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Bình Định FC.png" alt="">
+                      <span class="valuetopplayer">3</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Bruno Cantanhede</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Thanh Hoa.png" alt="">
+                      <span class="valuetopplayer">2</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Hoàng Vũ Samson</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/TPHCM.png" alt="">
+                      <span class="valuetopplayer">1</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Nguyễn Hoàng Đức</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/VIettel.png" alt="">
+                      <span class="valuetopplayer">1</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allplayerpen.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CLUBS -->
+
+          <div id="CLUBS" class="tab-pane fade">
+            <div class="row">
+              <!-- Clubs Goals-->
+              <div class="col-12 col-xl-4 col-lg-4 leftItem">
+                <div class="goal overviewgoals">
+                  <div class="title">
+                    <h2>Goals</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/CAHN.png" alt="">
+                  </div>
+
+                  <div class="footer">
+                    <span class="line">Công an Hà Nội</span>
+                    <span class="value ">30</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Hà Nội</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">29</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Viettel</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/VIettel.png" alt="">
+                      <span class="valuetopplayer">27</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Đông Á Thanh Hóa</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/TPHCM.png" alt="">
+                      <span class="valuetopplayer">26</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Thép Xanh Nam Định</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Nam Định.png" alt="">
+                      <span class="valuetopplayer">22</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allclubgoals.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Clubs wins -->
+              <div class="col-12 col-xl-4 col-lg-4 centerItem">
+                <div class="goal overviewwins">
+                  <div class="title">
+                    <h2>Wins</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/HN.png" alt="">
+                  </div>
+                  <div class="footer">
+                    <span class="line">Hà Nội</span>
+                    <span class="value">11</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Công An Hà Nội</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/CAHN.png" alt="">
+                      <span class="valuetopplayer">10</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Đông Á Thanh Hóa</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Thanh Hoa.png" alt="">
+                      <span class="valuetopplayer">10</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Viettel</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/VIettel.png" alt="">
+                      <span class="valuetopplayer">8</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Hải Phòng</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HaiPhong.png" alt="">
+                      <span class="valuetopplayer">7</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allclubwin.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- CLubs losses -->
+              <div class="col-12 col-xl-4 col-lg-4 rightItem">
+                <div class="goal overviewlosses">
+                  <div class="title">
+                    <h2>Losses</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/TPHCM.png" alt="">
+                  </div>
+                  <div class="footer">
+                    <span class="line">TP Hồ Chí Minh</span>
+                    <span class="value">11</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">SHB Đà Nẵng</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/SHB.png" alt="">
+                      <span class="valuetopplayer">10</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Becamex Bình Dương</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/BinhDUong.png" alt="">
+                      <span class="valuetopplayer">8</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Hoàng Anh Gia Lai</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">7</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Sông Lam Nghệ An</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/SLNA.png" alt="">
+                      <span class="valuetopplayer">6</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allclubloss.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Clubs Possession (%) -->
+              <div class="col-12 col-xl-4 col-lg-4 leftItem">
+                <div class="goal overviewgoals">
+                  <div class="title">
+                    <h2>Possession(%)</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/CAHN.png" alt="">
+                  </div>
+
+                  <div class="footer">
+                    <span class="line">Công an Hà Nội</span>
+                    <span class="value ">62</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Quy Nhơn Bình Định</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Bình Định FC.png" alt="">
+                      <span class="valuetopplayer">55</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Đông Á Thanh Hóa</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Thanh Hoa.png" alt="">
+                      <span class="valuetopplayer">53.5</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Hà Nội</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">52</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Viettel</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/VIettel.png" alt="">
+                      <span class="valuetopplayer">51.2</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allclubposs.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Clubs Red Cards -->
+              <div class="col-12 col-xl-4 col-lg-4 centerItem">
+                <div class="goal clubsred">
+                  <div class="title">
+                    <h2>Red Cards</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/HAGL.png" alt="">
+                  </div>
+
+                  <div class="footer">
+                    <span class="line">Hoàng Anh Gia Lai</span>
+                    <span class="value ">3</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Hải Phòng</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HaiPhong.png" alt="">
+                      <span class="valuetopplayer">3</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Quy Nhơn Bình Định</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Bình Định FC.png" alt="">
+                      <span class="valuetopplayer">2</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Đông Á Thanh Hóa</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Thanh Hoa.png" alt="">
+                      <span class="valuetopplayer">1</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Hà Nội</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HN.png" alt="">
+                      <span class="valuetopplayer">1</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allclubred.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Clubs Yellow Cards -->
+              <div class="col-12 col-xl-4 col-lg-4 rightItem">
+                <div class="goal overviewgoals">
+                  <div class="title">
+                    <h2>Yellow Cards</h2>
+                  </div>
+                  <div class="overviewclubs">
+                    <img src="img/CAHN.png" alt="">
+                  </div>
+
+                  <div class="footer">
+                    <span class="line">Công an Hà Nội</span>
+                    <span class="value ">38</span>
+                  </div>
+                </div>
+                <div class="top">
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">2</span>
+                      <span class="nameplayer">Đông Á Thanh Hóa</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/Thanh Hoa.png" alt="">
+                      <span class="valuetopplayer">36</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">3</span>
+                      <span class="nameplayer">Viettel</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/VIettel.png" alt="">
+                      <span class="valuetopplayer">32</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">4</span>
+                      <span class="nameplayer">Hải Phòng</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HaiPhong.png" alt="">
+                      <span class="valuetopplayer">30</span>
+                    </div>
+                  </a>
+                  <a href="#" class="topgoalsplayer">
+                    <div class="first">
+                      <span class="rank">5</span>
+                      <span class="nameplayer">Hoàng Anh Gia Lai</span>
+                    </div>
+                    <div class="second">
+                      <img src="img/HAGL.png" alt="">
+                      <span class="valuetopplayer">30</span>
+                    </div>
+                  </a>
+                  <a href="Stats/allclubyellow.html" class="topgoalsplayer">
+                    <span class="more">View Full List</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="project.js"></script>
+  <footer>
+    <div class="footer-header">
+        <ul class="footer-header-list">
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Hỏi đáp</a></li>
+            <li><a href="#">Cơ hội nghề nghiệp</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+            <li><a href="#">Đối tác</a></li>
+        </ul>
+    </div>
+    <div class="footer-content">
+        <div class="follow-us">
+          <div class="follow-us-list">
+            <div data-count="Facebook" class="follow-us-item"><a target="_blank" href="https://www.facebook.com/VPFMedia"><i class="fa-brands fa-facebook" style="color: #006eff;"></i></a></div>
+            <div data-count="Tiktok" class="follow-us-item"><a target="_blank" href="https://www.tiktok.com/@v.leagueofficial"><i class="fa-brands fa-tiktok" style="color: #000000"></i></a></div>
+            <div data-count="Youtube" class="follow-us-item"><a target="_blank" href="https://www.youtube.com/user/Vpfmedia"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a></div>
+            <div data-count="Twitter" class="follow-us-item"><a target="_blank" href="https://twitter.com/vnleague"><i class="fa-brands fa-twitter" style="color: #005eff;"></i></a></div>
+          </div>
+        </div>
+        <div class="footer-content-infor">
+            <div class="fci-fci">
+                <div class="fci-item">
+                    <div class="fci-img">
+                        <img src="./project_image/Don-vi.png" alt="">
+                    </div>
+                    <div class="fci-text">
+                        <p>ĐƠN VỊ CHỦ QUẢN</p>
+                        <p>Công ty cổ phần bóng đá chuyên nghiệp Việt Nam (VPF)</p>
+                    </div>
+                </div>
+                <div class="fci-item">
+                    <div class="fci-img">
+                        <img src="./project_image/diaChi.png" alt="">
+                    </div>
+                    <div class="fci-text">
+                        <p>ĐỊA CHỈ</p>
+                        <p>Tầng 3, Tòa nhà Handico, Khu đô thị mới Mễ Trì Hạ, đường Phạm Hùng, quận Nam Từ Liêm, TP.
+                            Hà Nội.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fci-fci">
+                <div class="fci-item">
+                    <div class="fci-img">
+                        <img src="./project_image/giayphep.png" alt="">
+                    </div>
+                    <div class="fci-text">
+                        <p>GIẤY PHÉP</p>
+                        <p>Giấy phép số 4593/GP-TTĐT do sở TT&TT Hà Nội cấp ngày 31/10/2017</p>
+                    </div>
+                </div>
+                <div class="fci-item">
+                    <div class="fci-img">
+                        <img src="./project_image/nd-man.png" alt="">
+                    </div>
+                    <div class="fci-text">
+                        <p>NGƯỜI CHỊU TRÁCH NHIỆM NỘI DUNG</p>
+                        <p>Nguyễn Thị Thu Huyền (Trưởng phòng Truyền Thông - 02437858457 (máy lẻ 126))</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fci-fci">
+                <div class="fci-item">
+                    <div class="fci-img">
+                        <img src="./project_image/contact.png" alt="">
+                    </div>
+                    <div class="fci-text">
+                        <p>LIÊN LẠC</p>
+                        <p>024.3785.8457/58 - FAX: 024.3785.8462</p>
+                    </div>
+                </div>
+                <div class="fci-item">
+                    <div class="fci-img">
+                        <img src="./project_image/website.png" alt="">
+                    </div>
+                    <div class="fci-text">
+                        <p>WEBSITE</p>
+                        <p><a href="#">www.vpf.vn</a> <a href="#">www.vnleague.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-end">
+        <div class="fte-text">
+            <p>© 2018 VIETNAM PROFESSIONAL FOOTBALL ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="fte-image">
+            <a href="#"><img src="./project_image/logovpf-footer.jpg" alt=""></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

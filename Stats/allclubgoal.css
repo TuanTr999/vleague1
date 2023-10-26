@@ -1,0 +1,86 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.allstats{
+    background-color: #f4f5f6;
+    display: flex;
+    font-family: DFLWeb,Arial,sans-serif;;
+    margin-top: 130px;
+}
+.main{
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0px auto;
+}
+.head3{
+    display: flex;
+    position: relative;
+    margin-top: 0px;
+}
+.head3 h1 {
+    font-family: DFL Condensed;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.head3 h2{
+    font-size: 20px;
+    line-height: 24px;
+    font-family: DFL Condensed;
+    font-weight: bold;
+    position:absolute;
+    right: 5%;
+}
+.ontable table{
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    text-indent: initial;
+    border-spacing: 2px;
+    background-color: white;
+}
+.ontable tr{
+    border-bottom: 1px solid #f4f5f6;
+}
+.thead{
+    background-color: #f4f5f6a4;
+}
+.thead th{
+    height: 30px;
+    line-height: 25px;
+    color: #87668a;
+    font-size: 12px;
+    padding-left: 8px;
+}
+.tbody th{
+    height: 55px;
+    line-height: 55px;
+    font-size: 16px;
+    padding-left: 8px;
+    color: black;
+    font-family: DFLWeb,Arial,sans-serif;
+    font-weight: 400;
+}
+.clubimg1 img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.nationalityimg img{
+    width: 50px;
+    height: 30px;
+}
+.rank1{
+    width: 10%;
+}
+.club1{
+    width: 80%;
+}
+.stat1{
+    width: 10%;
+}
+.num span{
+    font-family: Arial,Helvetica,Helvetica,sans-serif;
+    font-weight: bold;
+}
+

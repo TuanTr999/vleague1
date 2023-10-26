@@ -1,0 +1,109 @@
+html {
+    font-size: 62.5%;
+}
+.club-vl-container {
+    margin-top: 70px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
+.club-vl-smaller {
+    width: 70%;
+}
+.club-vl-title {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.club-vl-title p {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+.club-vl-title h2 {
+    font-weight: 900;
+}
+.club-vl-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    box-sizing: border-box;
+    padding: 2rem 0.2rem;
+}
+.club-vl-item {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.5rem 2.5rem;
+    background-color: #ffffff;
+    box-shadow: var(--box-shadow-btn);
+    position: relative;
+    transition: 400ms linear;
+}
+.club-vl-item:hover {
+    background: red;
+}
+.club-vl-item:hover .name-club,
+.club-vl-item:hover .stadium-club {
+    color: #fff;
+}
+.club-vl-image img{
+    width: 70px;
+    height: 70px;
+}
+.stadium-club {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: rgb(126, 98, 98);
+    transition: 200ms linear;
+}
+.stadium-club img {
+    width: 30px;
+    height: 30px;
+}
+.name-club {
+    font-size: 2rem;
+    color: #000000;
+    transition: 200ms linear;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .club-vl-smaller {
+        width: 90%;
+    }
+    .club-vl-container {
+        margin-top: 100px;
+    }
+
+}
+@media screen and ( min-width: 500px) and (max-width: 767px) {
+    .club-vl-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .club-vl-smaller {
+        width: 90%;
+    }
+    .club-vl-container {
+        margin-top: 0;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .club-vl-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .club-vl-smaller {
+        width: 90%;
+    }
+    .club-vl-container {
+        margin-top: 0;
+    }
+    
+}

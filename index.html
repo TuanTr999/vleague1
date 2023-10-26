@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vleague</title>
+  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="project.js"></script>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="sub-search">
+    <div  onclick=hideSubXmark() class="sub-xmark"><i class="fa-solid fa-xmark sub-xmark-icon"></i></div>
+    <input type="text" placeholder="Search here..."><i class="fa-solid fa-magnifying-glass"></i>
+  </div>
+  <div class="sub-head">
+    <div onclick="showSubHead()" class="icon-bars sub-head-item"><i class="fa-solid fa-bars"></i></div>
+    <div class="sub-head-logo">
+      <a href="index.html"><img src="./project_image/vpf.png" alt=""></a>
+    </div>
+    <div class="sub-head-right">
+      <a href="login-form-prj.html"><div class="sub-head-user sub-head-item"><i class="fa-solid fa-user"></i></div></a>
+      <div  onclick="showSubSearch()" class="sub-head-search sub-head-item">
+        <i class="fa-solid fa-magnifying-glass sub-glass"></i>
+      </div>
+    </div>
+  </div>
+  <div class="sub-menu">
+    <div onclick="closeSubHead()" class="sub-menu-head"><i class="fa-solid fa-xmark"></i></div>
+    <div class="sub-menu-content">
+      <ul class="sub-menu-list">
+        <li class="sub-active hover-list"><a href="#">Home</a></li>
+        <li class="hover-list"><a href="club.html">Clubs</a></li>
+        <li class="hover-list"><a href="sche2.html">Fixtures</a></li>
+        <li class="hover-list"><a href="#">News</a></li>
+        <li class="hover-list"><a href="table.html">Tables</a></li>
+        <li class="hover-list"><a href="stats.html">Stats</a></li>
+        <li class="hover-list"><a href="#">Highlights</a></li>
+        <input type="checkbox" name="check-menu" id="check-menu">
+        <li class="hover-list more-hover-list"><label for="check-menu">More <i class="fa-solid fa-caret-right sub-fa-caret-right"></i></label>
+          <ul class="sub-more">
+            <li class="sub-more-list"><a href="#donors">Nhà tài trợ</a></li>
+            <li class="sub-more-list"><a href="#">Cầu thủ của trận</a></li>
+            <li class="sub-more-list"><a href="#">Huấn luyện viên</a></li>
+            <li class="sub-more-list"><a href="#">Trọng tài</a></li>
+            <li class="sub-more-list"><a href="#">Câu hỏi thường gặp</a></li>
+            <li class="sub-more-list"><a href="#">Thư viện</a></li>
+            <li class="sub-more-list"><a href="#">Nhà tài trợ</a></li>
+            <li class="sub-more-list"><a href="#">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu-user"><a href="./login-form-prj.html"><i class="fa-solid fa-user"></i> LOGIN</a></li>        
+      </ul>
+    </div>
+  </div>
+  <header class="masthead">
+    <nav class="clubNavigation">
+      <h4 class="clubSiteHeader">Club Sites <i class="fa-solid fa-arrow-up-right-from-square"></i></h4>
+      <ul class="clubList">
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/binh-duong-2021-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/cong-an-ha-noi-fc-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/haiphongfc-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/HNFC-6-sao-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/HAGL-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Logo-Ha-Tinh-update-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Khanh-Hoa-FC-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Logo-CLB-Dong-A-Thanh-Hoa_chuan-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Quang-Nam-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/HCM-FC-2023-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Logo-Viettel-FC-JPG-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Nam-Dinh-150x150.jpg" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/slna-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+        <li class="clubList__club"><a href="#" class="clubList__link" target="_blank">
+            <div class="badge-image-container">
+              <a href="#"><img src="./project_image/Binh-Dinh-150x150.png" alt=""></a>
+            </div>
+          </a></li>
+      </ul>
+    </nav>
+    <div class="logo-container">
+      <a href="./index.html">
+        <div class="logo">
+          <img src="./project_image/project_image.png" alt="">
+      </a>
+    </div>
+    <div class="navContainer">
+      <ul class="nav-list">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="club.html">Clubs</a></li>
+        <li><a href="./sche2.html">Fixtures</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="./table.html">Tables</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="#">Highlight</a></li>
+      </ul>
+      <div class="navContainer-right">
+        <div class="navContainer-more">
+          <p>More <i class="fa-solid fa-caret-up fa-rotate-180"></i></p>
+          <ul class="submore">
+            <li><a href="#donors">Nhà tài trợ</a></li>
+            <li><a href="#">Cầu thủ của trận</a></li>
+            <li><a href="#">Huấn luyện viên</a></li>
+            <li><a href="#">Trọng tài</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+            <li><a href="#">Thư viện</a></li>
+            <li><a href="#">Nhà tài trợ</a></li>
+            <li><a href="#">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </div>
+        <div class="divider divider-1"></div>
+        <div class="navContainer-user"><a href="./login-form-prj.html"><i class="fa-solid fa-user"></i></a></div>
+        <div class="divider"></div>
+        <div class="navContainer-search">
+          <i id="search-btn" class="fa-solid fa-magnifying-glass"
+            onclick=showSearch()></i>
+          <i id="xmark-btn" class="fa-solid fa-xmark fa-xmark-search" onclick=showXmark()></i>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- End header -->
+
+  <!-- Search -->
+  <div class="search-container">
+    <div class="search-smaller">
+      <div class="search-label">
+        <input type="text" placeholder="Search for News, Players and Clubs">
+        <div class="divide-search"></div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="suggested-divide"></div>
+      <div class="suggestedSearch">
+        <div class="suggestedInfor">
+          <h2>Suggested Search</h2>
+          <div class="suggestedInfor-list">
+            <a href="#">
+              <p>Lịch thi đấu mới nhất</p>
+            </a>
+            <a href="#">
+              <p>Cầu thủ của tháng</p>
+            </a>
+            <a href="#">
+              <p>Cầu thủ của trận đấu</p>
+            </a>
+            <a href="#">
+              <p>Vé</p>
+            </a>
+            <a href="#">
+              <p>Giải đấu</p>
+            </a>
+          </div>
+        </div>
+        <div class="suggested-divide"></div>
+        <div class="suggestedPlayers">
+          <h2>Player</h2>
+          <div class="suggestedPlayers-list">
+            <a href="#">
+              <p>Nguyễn Hoàng Đức</p>
+            </a>
+            <a href="#">
+              <p>Đặng Văn Lâm</p>
+            </a>
+            <a href="#">
+              <p>Nguyễn Văn Quyết</p>
+            </a>
+            <a href="#">
+              <p>Đoàn Văn Hậu</p>
+            </a>
+            <a href="#">
+              <p>Rafaelson</p>
+            </a>
+            <a href="#">
+              <p>Bùi Tiến Dũng</p>
+            </a>
+            <a href="#">
+              <p>Phạm Tuấn Hải</p>
+            </a>
+          </div>
+        </div>
+        <div class="suggested-divide"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End search -->
+
+  <!-- Home -->
+  <div class="tabbedHome">
+
+    <!-- SideBar -->
+    <div class="sideBar">
+      <div class="sideBar-header">
+        <div class="sideBar-header-top">
+          <img src="project_image/vpf.png" alt="">
+          <h2>Lịch thi đấu</h2>
+        </div>
+        <button>V.League</button>
+      </div>
+      <div class="sideBar-content">
+        <h1>VÒNG 1 GIẢI VĐQG NIGHT WOLF 2023/24</h1>
+      </div>
+      <p class="day">Thứ 6, 20 Tháng 10, 2023</p>
+      <div class="sideBar-fixture-1">
+        <div class="match-in-week">
+          <div class="result-fixture">
+            <div class="result-fixture-team-1">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/haiphongfc-150x150.jpg" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">HPFC</div>
+            </div>
+            <div class="result-fixture-time"><a href="#">1 - 1</a></div>
+            <div class="result-fixture-team-2">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/HAGL-150x150.jpg" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">HAGL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="day">Thứ 7, 21 Tháng 10, 2023</p>
+      <div class="sideBar-fixture-1">
+        <div class="match-in-week">
+          <div class="result-fixture">
+            <div class="result-fixture-team-1">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/Logo-CLB-Dong-A-Thanh-Hoa_chuan-150x150.png" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">THFC</div>
+            </div>
+            <div class="result-fixture-time"><a href="#">2 - 2</a></div>
+            <div class="result-fixture-team-2">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/Logo-Ha-Tinh-update-150x150.png" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">HTFC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="day">Chủ Nhật, 22 Tháng 10, 2023</p>
+      <div class="sideBar-fixture-1">
+        <div class="match-in-week">
+          <div class="result-fixture">
+            <div class="result-fixture-team-1">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/slna-150x150.png" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">SLNA</div>
+            </div>
+            <div class="result-fixture-time"><a href="#">1 - 1</a></div>
+            <div class="result-fixture-team-2">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/Logo-Viettel-FC-JPG-150x150.jpg" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">VTFC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sideBar-fixture-2">
+        <div class="match-in-week">
+          <div class="result-fixture">
+            <div class="result-fixture-team-1">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/Nam-Dinh-150x150.jpg" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">NDFC</div>
+            </div>
+            <div class="result-fixture-time"><a href="#">2 - 1</a></div>
+            <div class="result-fixture-team-2">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/Quang-Nam-150x150.jpg" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">QNFC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sideBar-fixture-3">
+        <div class="match-in-week">
+          <div class="result-fixture">
+            <div class="result-fixture-team-1">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/cong-an-ha-noi-fc-150x150.png" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">CAHN</div>
+            </div>
+            <div class="result-fixture-time"><a href="#">1 - 1</a></div>
+            <div class="result-fixture-team-2">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/Binh-Dinh-150x150.png" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">QNBD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sideBar-fixture-4">
+        <div class="match-in-week">
+          <div class="result-fixture">
+            <div class="result-fixture-team-1">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/HCM-FC-2023-150x150.png" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">HCMC</div>
+            </div>
+            <div class="result-fixture-time"><a href="#">2 - 0</a></div>
+            <div class="result-fixture-team-2">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/Khanh-Hoa-FC-150x150.png" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">KHFC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="day">Thứ 6, 24 Tháng 11, 2023</p>
+      <div class="sideBar-fixture-1 sideBar-last">
+        <div class="match-in-week">
+          <div class="result-fixture">
+            <div class="result-fixture-team-1">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/binh-duong-2021-150x150.png" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">BDFC</div>
+            </div>
+            <div class="result-fixture-time"><a href="#">18:00</a></div>
+            <div class="result-fixture-team-2">
+              <div class="result-fixture-item">
+                <a href="#"><img src="./project_image/HNFC-6-sao-150x150.png" alt=""></a>
+              </div>
+              <div class="result-fixture-name-club">HNFC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sideBar-footer">
+        <button>Xem tất cả <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="table-container">
+      <div class="sideBar-header">
+        <div class="sideBar-header-top">
+          <img src="project_image/vpf.png" alt="">
+          <h2>Bảng xếp hạng</h2>
+        </div>
+        <button>V.League</button>
+      </div>
+      <table class="table-list-club">
+        <tr class="table-list-club-head">
+          <th>VT</th>
+          <th>Đội bóng</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>Trận</th>
+          <th>HS</th>
+          <th>Điểm</th>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>1</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/Logo-CLB-Dong-A-Thanh-Hoa_chuan-150x150.png" alt="">
+              </div>
+              <div class="table-club-name">THFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>2</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/cong-an-ha-noi-fc-150x150.png" alt="">
+              </div>
+              <div class="table-club-name">CAHN</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>3</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/Binh-Dinh-150x150.png" alt="">
+              </div>
+              <div class="table-club-name">BDFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>4</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/haiphongfc-150x150.jpg" alt="">
+              </div>
+              <div class="table-club-name">HPFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>5</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/binh-duong-2021-150x150.png" alt="">
+              </div>
+              <div class="table-club-name">BDFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>6</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/HAGL-150x150.jpg" alt="">
+              </div>
+              <div class="table-club-name">HAGL</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>7</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/HCM-FC-2023-150x150.png" alt="">
+              </div>
+              <div class="table-club-name">HCMC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>8</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/HNFC-6-sao-150x150.png" alt="">
+              </div>
+              <div class="table-club-name">HNFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>9</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/Khanh-Hoa-FC-150x150.png" alt="">
+              </div>
+              <div class="table-club-name">KHFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>10</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/Logo-Ha-Tinh-update-150x150.png" alt="">
+              </div>
+              <div class="table-club-name">HTFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>11</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/Logo-Viettel-FC-JPG-150x150.jpg" alt="">
+              </div>
+              <div class="table-club-name">VTFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>12</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/Nam-Dinh-150x150.jpg" alt="">
+              </div>
+              <div class="table-club-name">NDFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>13</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/Quang-Nam-150x150.jpg" alt="">
+              </div>
+              <div class="table-club-name">QNFC</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+        <tr class="table-list-club-body">
+          <td>14</td>
+          <td class="table-align-left">
+            <div class="table-club-item">
+              <div class="table-club-img">
+                <img src="./project_image/slna-150x150.png" alt="">
+              </div>
+              <div class="table-club-name">SLNA</div>
+            </div>
+          </td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right"></td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+          <td class="table-aligh-right">0</td>
+        </tr>
+      </table>
+      <div class="table-footer">
+        <a href="./table.html"><button>Xem chi tiết <i class="fa-solid fa-arrow-right"></i></button></a>
+      </div>
+    </div>
+    <!-- End sideBar -->
+
+    <!-- News -->
+    <div class="news-title-1 news-title">
+      <h2>Latest VL News</h2>
+      <a href="news.html"><button class="news-btn">Xem thêm</button></a>
+    </div>
+    <div class="news">
+      <article class="main-news">
+        <div class="main-news-image">
+          <a href="https://vpf.vn/tin-tuc/bong-da-viet-nam/be-mac-lop-tap-huan-giam-sat-trong-tai-va-trong-tai-cac-giai-chuyen-nghiep-quoc-gia-mua-giai-2023-24-khu-vuc-phia-bac/"><img src="./project_image/main-news-image.jpg" alt=""></a>
+        </div>
+        <p class="news-title" style="color: red">Hoạt động VPF</p>
+        <h2 class="main-news-td"><a href="https://vpf.vn/tin-tuc/bong-da-viet-nam/be-mac-lop-tap-huan-giam-sat-trong-tai-va-trong-tai-cac-giai-chuyen-nghiep-quoc-gia-mua-giai-2023-24-khu-vuc-phia-bac/">Bế mạc lớp tập huấn giám sát trọng tài và trọng tài các...</a></h2>
+        <p class="news-content">Sáng 13/10, lớp tập huấn giám sát trọng tài, trọng tài các giải bóng đá chuyên
+          nghiệp quốc gia mùa giải 2023/24 (khu vực phía Bắc) đã bế mạc tại LĐBĐVN.
+        </p>
+      </article>
+      <div class="sub-news">
+        <div class="sub-news-item">
+          <div class="sub-news-image">
+            <a href="#"><img src="./project_image/sub-news-image-1.jpg" alt=""></a>
+          </div>
+          <div class="sub-news-content">
+            <p class="news-title" style="color: red">Hoạt động VPF</p>
+            <h2><a href="#">100% trọng tài hoàn thành bài kiểm tra thể lực tại khoá tập...</a></h2>
+            <p class="news-content news-content-res">100% trọng tài, trợ lý trọng tài tham gia lớp tập huấn đầu mùa giải BĐCN QG đều vượt
+              qua bài kiểm tra theo...</p>
+          </div>
+        </div>
+        <div class="sub-news-item">
+          <div class="sub-news-image">
+            <a href="#"><img src="./project_image/sub-news-image-2.jpg" alt=""></a>
+          </div>
+          <div class="sub-news-content">
+            <p class="news-title" style="color: red">Hoạt động VPF</p>
+            <h2><a href="#">Khai mạc lớp tập huấn Giám sát trọng tài, Trọng tài đầu mùa...</a></h2>
+            <p class="news-content news-content-res">Đến dự lễ khai mạc có ông Dương Nghiệp Khôi – Tổng Thư ký LĐBĐVN, ông Nguyễn Minh
+              Ngọc
+              – Phó Chủ tịch HĐQT,...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End News -->
+    <div class="main-divider"></div>
+    <div class="news-title">
+      <h2>Video</h2>
+      <a href="#"><button class="news-btn">Xem thêm</button></a>
+    </div>
+    <div class="hightlight-kk-container">
+      <i class="fa-solid fa-caret-left"></i>
+      <div class="hightlight-kk">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/TkcS1Zfy2xA?si=gGXMH9zGC6775zdJ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen draggable="false"></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/lOA9toyn4Yo?si=s4msmK3hiXIO6qpJ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen draggable="false"></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/uuuBJAf9XR4?si=YtxQCh2VqP3rGufO" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen draggable="false"></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/uQcWhM9cdEA?si=XGbToxNmO9hm9Dyf" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen draggable="false"></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/a6KznN_gfMI?si=9OM7MG7WL27XOEgZ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen draggable="false"></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/S6VdtjxQhvU?si=2pfy758r7_AAMN-I" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen draggable="false"></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/Tgp7clAhg4o?si=9ptHbM4I3jKvnzx0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen draggable="false"></iframe>
+        </div>
+      </div>
+      <i class="fa-solid fa-caret-right"></i>
+    </div>
+    <div class="main-divider"></div>
+    <div class="news-title">
+      <h2>Gallery</h2>
+      <a href="#"><button class="news-btn">Xem thêm</button></a>
+    </div>
+    <div class="hightlight-kk-container imageGalleryContainer">
+      <i class="fa-solid fa-caret-left"></i>
+      <div class="hightlight-kk imageGallerySmall">
+        <div class="video-wrapper imageGallery">
+          <div class="image-gallery">
+            <div class="image-gallery-content">
+              <h2>National Super Cup - Thaco Cup 2023:</h2>
+              <p>Cong An Ha Noi club - Dong A Thanh Hoa club gallerys</p>
+              <div class="active-vpf"><a href="#"><span>Ảnh hoạt động VPF</span></a></div>
+            </div>
+            <img src="./project_image/hd_vpf.jpg" alt="">
+          </div>
+        </div>
+        <div class="video-wrapper imageGallery">
+          <div class="image-gallery">
+            <div class="image-gallery-content">
+              <h2>V.LEAGUE AWARDS 2023 Gallerys</h2>
+              <div class="active-vpf"><a href="#"><span>Ảnh hoạt động VPF</span></a></div>
+            </div>
+            <img src="./project_image/hd-vpf-award.jpg" alt="">
+          </div>
+        </div>
+        <div class="video-wrapper imageGallery">
+          <div class="image-gallery"><img src="./project_image/hd-vpf-hnvpt.jpg" alt=""></div>
+        </div>
+        <div class="video-wrapper imageGallery">
+          <div class="image-gallery"><img src="./project_image/hd_vpf.jpg" alt=""></div>
+        </div>
+        <div class="video-wrapper imageGallery">
+          <div class="image-gallery"><img src="./project_image/hd_vpf.jpg" alt=""></div>
+        </div>
+        <div class="video-wrapper imageGallery">
+          <div class="image-gallery"><img src="./project_image/hd_vpf.jpg" alt=""></div>
+        </div>
+        <div class="video-wrapper imageGallery">
+          <div class="image-gallery"><img src="./project_image/hd_vpf.jpg" alt=""></div>
+        </div>
+      </div>
+      <i class="fa-solid fa-caret-right"></i>
+    </div>
+    <div class="main-divider"></div>
+    <div class="major-donors">
+      <div class="major-donors-img"><a target="_blank" href="https://samngoclinhkontum.com/gioi-thieu/"><img
+            src="./project_image/nhaTaiTro.png" alt=""></a>
+        <div class="donors-content">
+          <h2>Nhà tài trợ chính</h2>
+          <p>CTCP Sâm Ngọc Linh KonTum</p>
+        </div>
+      </div>
+      <div class="major-donors-img"><a target="_blank" href="https://www.pti.com.vn/"><img
+            src="./project_image/nhaTaiTro3.jpg" alt=""></a>
+        <div class="donors-content">
+          <h2>Nhà tài trợ chính</h2>
+          <p>Pti insurance</p>
+        </div>
+      </div>
+      <div class="major-donors-img"><a target="_blank" href="https://biahanoinghetinh.com.vn/"><img
+            src="./project_image/bia-sao-vang-285x400.jpg" alt=""></a>
+        <div class="donors-content">
+          <h2>Nhà tài trợ chính</h2>
+          <p>Bia sao vàng</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-divider"></div>
+    <div class="describe-container">
+      <div class="fanpage-facebook-container">
+        <div class="fanpage-facebook-smaller">
+          <div class="fanpage-facebook-header">
+            <a target="_blank" href="https://www.facebook.com/V.League.VPF/?ref=embed_page"><img
+                src="./project_image/avt-fanpage.png" alt=""></a>
+            <div class="fp-fb-subHeader">
+              <a target="_blank" href="https://www.facebook.com/V.League.VPF/?ref=embed_page">
+                <h2>V.League <i class="fa-solid fa-circle-check" style="color: #005eff;"></i></h2>
+              </a>
+              <p>154.912 người theo dõi</p>
+            </div>
+          </div>
+          <div class="fanpage-facebook-footer">
+            <a target="_self"
+              href="https://www.facebook.com/plugins/error/confirm/page?iframe_referer=https%3A%2F%2Fvpf.vn%2F&kid_directed_site=false&secure=true&plugin=page&return_params=%7B%22href%22%3A%22https%3A%2F%2Fwww.facebook.com%2FV.League.VPF%2F%22%2C%22tabs%22%3A%22timeline%22%2C%22width%22%3A%22400%22%2C%22height%22%3A%22530%22%2C%22small_header%22%3A%22false%22%2C%22adapt_container_width%22%3A%22true%22%2C%22hide_cover%22%3A%22false%22%2C%22show_facepile%22%3A%22false%22%2C%22appId%22%3A%22379717756171842%22%2C%22ret%22%3A%22sentry%22%2C%22act%22%3Anull%7D">
+              <p><i class="fa-brands fa-facebook" style="color: #005eff;"></i> Theo dõi trang</p>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/user/Vpfmedia">
+              <p><i class="fa-solid fa-circle-play"></i> Xem video</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="trailer-vleague-container">
+        <div class="image-vpf">
+          <img src="./project_image/vpf-img.jpg">
+        </div>
+        <h2><a target="_blank" href="https://www.youtube.com/channel/UCqOmFFbm6NBv_1u9hnIZJmA">VPF media</a></h2>
+
+
+        <div class="trailer-video">
+          <iframe width="100%" height="234" src="https://www.youtube.com/embed/yFStOS1NiD0"
+            title="Trailer Night Wolf V.League 1 - 2022 | VPF Media" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <p>
+          <a href="https://www.youtube.com/watch?v=yFStOS1NiD0">
+            VPF Media | Nhanh hơn, cao hơn, xa hơn
+            Night Wolf V.League 1 – 2022.
+          </a>
+        </p>
+      </div>
+      <div class="signInTTN-container">
+        <a href="http://dangkythe.vpf.vn/dangky.aspx"><img src="./project_image/dang-ky-the-2023.jpg" alt=""></a>
+      </div>
+    </div>
+    <div id="donors" class="donors-container">
+      <div class="main-dn">
+        <div class="main-dn-img">
+          <a href="https://caspervietnam.vn/"><img src="./project_image/donors-1.png" alt=""></a>
+        </div>
+        <div class="main-dn-img">
+          <a href="https://samngoclinhkontum.com/gioi-thieu/"><img src="./project_image/donors-2.png" alt=""></a>
+        </div>
+        <div class="main-dn-img">
+          <a href="https://savabeco.com.vn/"><img src="./project_image/donors-3.png" alt=""></a>
+        </div>
+      </div>
+      <div class="divide-dn"></div>
+      <div class="sub-dn">
+        <div class="sub-dn-img">
+          <a href="https://fptplay.vn/"><img src="./project_image/donors-4.png" alt=""></a>
+        </div>
+        <div class="sub-dn-img">
+          <a href="https://dongluc.vn/"><img src="./project_image/donors-5.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-header">
+      <ul class="footer-header-list">
+        <li><a href="#">Liên hệ</a></li>
+        <li><a href="#">Hỏi đáp</a></li>
+        <li><a href="#">Cơ hội nghề nghiệp</a></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+        <li><a href="#">Điều khoản sử dụng</a></li>
+        <li><a href="#">Đối tác</a></li>
+      </ul>
+    </div>
+    <div class="footer-content">
+      <div class="follow-us">
+        <div class="follow-us-list">
+          <div data-count="Facebook" class="follow-us-item"><a target="_blank" href="https://www.facebook.com/VPFMedia"><i class="fa-brands fa-facebook" style="color: #006eff;"></i></a></div>
+          <div data-count="Tiktok" class="follow-us-item"><a target="_blank" href="https://www.tiktok.com/@v.leagueofficial"><i class="fa-brands fa-tiktok" style="color: #000000"></i></a></div>
+          <div data-count="Youtube" class="follow-us-item"><a target="_blank" href="https://www.youtube.com/user/Vpfmedia"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a></div>
+          <div data-count="Twitter" class="follow-us-item"><a target="_blank" href="https://twitter.com/vnleague"><i class="fa-brands fa-twitter" style="color: #005eff;"></i></a></div>
+        </div>
+      </div>
+      <div class="footer-content-infor">
+        <div class="fci-fci">
+          <div class="fci-item">
+            <div class="fci-img">
+              <img src="./project_image/Don-vi.png" alt="">
+            </div>
+            <div class="fci-text">
+              <p>ĐƠN VỊ CHỦ QUẢN</p>
+              <p>Công ty cổ phần bóng đá chuyên nghiệp Việt Nam (VPF)</p>
+            </div>
+          </div>
+          <div class="fci-item">
+            <div class="fci-img">
+              <img src="./project_image/diaChi.png" alt="">
+            </div>
+            <div class="fci-text">
+              <p>ĐỊA CHỈ</p>
+              <p>Tầng 3, Tòa nhà Handico, Khu đô thị mới Mễ Trì Hạ, đường Phạm Hùng, quận Nam Từ Liêm, TP. Hà Nội.</p>
+            </div>
+          </div>
+        </div>
+        <div class="fci-fci">
+          <div class="fci-item">
+            <div class="fci-img">
+              <img src="./project_image/giayphep.png" alt="">
+            </div>
+            <div class="fci-text">
+              <p>GIẤY PHÉP</p>
+              <p>Giấy phép số 4593/GP-TTĐT do sở TT&TT Hà Nội cấp ngày 31/10/2017</p>
+            </div>
+          </div>
+          <div class="fci-item">
+            <div class="fci-img">
+              <img src="./project_image/nd-man.png" alt="">
+            </div>
+            <div class="fci-text">
+              <p>NGƯỜI CHỊU TRÁCH NHIỆM NỘI DUNG</p>
+              <p>Nguyễn Thị Thu Huyền (Trưởng phòng Truyền Thông - 02437858457 (máy lẻ 126))</p>
+            </div>
+          </div>
+        </div>
+        <div class="fci-fci">
+          <div class="fci-item">
+            <div class="fci-img">
+              <img src="./project_image/contact.png" alt="">
+            </div>
+            <div class="fci-text">
+              <p>LIÊN LẠC</p>
+              <p>024.3785.8457/58 - FAX: 024.3785.8462</p>
+            </div>
+          </div>
+          <div class="fci-item">
+            <div class="fci-img">
+              <img src="./project_image/website.png" alt="">
+            </div>
+            <div class="fci-text">
+              <p>WEBSITE</p>
+              <p><a href="#">www.vpf.vn</a>  <a href="#">www.vnleague.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-end">
+      <div class="fte-text">
+        <p>© 2018 VIETNAM PROFESSIONAL FOOTBALL ALL RIGHTS RESERVED</p>
+      </div>
+      <div class="fte-image">
+        <a href="#"><img src="./project_image/logovpf-footer.jpg" alt=""></a>
+      </div>
+    </div>
+   
+  </footer>
+  <!-- End footer -->
+</body>
+
+</html>

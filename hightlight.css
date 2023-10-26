@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+.hightlightContainer {
+    margin-top: 70px;
+}
+.hightlightHeader-image {
+    position: relative;
+    overflow: hidden;
+    height: 190px;
+
+}
+.hightlightHeader-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hightlightHeader-title {
+    position: absolute;
+    font-size: 5rem;
+    bottom: 3rem;
+    left: 1rem;
+    font-weight: 600;
+}
+.hightlightHeader {
+    position: relative;
+}
+.hightlightSmaller {
+    box-sizing: border-box;
+    padding: 2rem 20rem;
+}
+.hightlightSmaller-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hightlightSmaller-text P {
+    font-size: 3rem;
+    color: red;
+}
+.hightlightSmaller-text .view-more {
+    font-size: 1.5rem;
+
+}
+.hightlightSmaller-text .view-more span {
+    color: #fff;
+    background-color: red;
+    padding: 1rem 1.4rem;
+    border-radius: 5px;
+
+}
+.hightlight-items {
+    position: relative;
+    width: 324px;
+    height: 400px;
+}
+.hightlight-items-text {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+.text-match {
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+.hightlightSmaller-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.text-title span {
+    background: red;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+@media  screen and (max-width: 500px) {
+    .hightlightSmaller {
+        box-sizing: border-box;
+        padding: 3rem 2rem;
+    }
+    .hightlightSmaller-list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .hightlightSmaller-text P {
+        font-size: 2rem;
+        color: red;
+    }
+    .hightlightSmaller-text .view-more {
+        font-size: 1rem;
+    
+    }
+    .hightlightContainer {
+        margin-top: 0px;
+    }
+}
+@media  screen and (min-width: 500px) and (max-width: 767px) {
+    .hightlightSmaller {
+        box-sizing: border-box;
+        padding: 3rem 1rem;
+    }
+    .hightlightSmaller-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .hightlightContainer {
+        margin-top: 0px;
+    }
+}
+@media  screen and (min-width: 767px) and (max-width: 1023px) {
+    .hightlightSmaller {
+        box-sizing: border-box;
+        padding: 5rem 5rem;
+    }
+    .hightlightSmaller-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .hightlightContainer {
+        margin-top: 40px;
+    }
+}
+@media  screen and (min-width: 1023px) and (max-width: 1250px){
+    .hightlightSmaller {
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+    .hightlightSmaller-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .hightlightContainer {
+        margin-top: 40px;
+    }
+
+}

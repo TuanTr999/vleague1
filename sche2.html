@@ -17,9 +17,56 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./project.js"></script>
   <link rel="stylesheet" href="footer-prj.css">
+  <link rel="stylesheet" href="project.css">
+  <script src="project.js"></script>
 </head>
 
 <body>
+  <!-- Header -->
+  <div class="sub-search">
+    <div  onclick=hideSubXmark() class="sub-xmark"><i class="fa-solid fa-xmark sub-xmark-icon"></i></div>
+    <input type="text" placeholder="Search here..."><i class="fa-solid fa-magnifying-glass"></i>
+  </div>
+  <div class="sub-head">
+    <div onclick="showSubHead()" class="icon-bars sub-head-item"><i class="fa-solid fa-bars"></i></div>
+    <div class="sub-head-logo">
+      <a href="index.html"><img src="./project_image/vpf.png" alt=""></a>
+    </div>
+    <div class="sub-head-right">
+      <a href="login-form-prj.html"><div class="sub-head-user sub-head-item"><i class="fa-solid fa-user"></i></div></a>
+      <div  onclick="showSubSearch()" class="sub-head-search sub-head-item">
+        <i class="fa-solid fa-magnifying-glass sub-glass"></i>
+      </div>
+    </div>
+  </div>
+  <div class="sub-menu">
+    <div onclick="closeSubHead()" class="sub-menu-head"><i class="fa-solid fa-xmark"></i></div>
+    <div class="sub-menu-content">
+      <ul class="sub-menu-list">
+        <li class="hover-list"><a href="index.html">Home</a></li>
+        <li class="hover-list"><a href="club.html">Clubs</a></li>
+        <li class="hover-list sub-active"><a href="sche2.html">Fixtures</a></li>
+        <li class="hover-list"><a href="news.html">News</a></li>
+        <li class="hover-list"><a href="table.html">Tables</a></li>
+        <li class="hover-list"><a href="stats.html">Stats</a></li>
+        <li class="hover-list"><a href="hightlight.html">Highlights</a></li>
+        <input type="checkbox" name="check-menu" id="check-menu">
+        <li class="hover-list more-hover-list"><label for="check-menu">More <i class="fa-solid fa-caret-right sub-fa-caret-right"></i></label>
+          <ul class="sub-more">
+            <li class="sub-more-list"><a href="#donors">Nhà tài trợ</a></li>
+            <li class="sub-more-list"><a href="#">Cầu thủ của trận</a></li>
+            <li class="sub-more-list"><a href="#">Huấn luyện viên</a></li>
+            <li class="sub-more-list"><a href="#">Trọng tài</a></li>
+            <li class="sub-more-list"><a href="#">Câu hỏi thường gặp</a></li>
+            <li class="sub-more-list"><a href="#">Thư viện</a></li>
+            <li class="sub-more-list"><a href="#">Nhà tài trợ</a></li>
+            <li class="sub-more-list"><a href="#">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu-user"><a href="./login-form-prj.html"><i class="fa-solid fa-user"></i> LOGIN</a></li>        
+      </ul>
+    </div>
+  </div>
   <header class="masthead">
     <nav class="clubNavigation">
       <h4 class="clubSiteHeader">Club Sites <i class="fa-solid fa-arrow-up-right-from-square"></i></h4>
@@ -97,26 +144,26 @@
       </ul>
     </nav>
     <div class="logo-container">
-      <a href="index.html">
+      <a href="./index.html">
         <div class="logo">
           <img src="./project_image/project_image.png" alt="">
       </a>
     </div>
     <div class="navContainer">
       <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="club.html">Clubs</a></li>
-        <li class="active"><a href="sche2.html">Fixtures</a></li>
+        <li class="active"><a href="./sche2.html">Fixtures</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="table.html">Tables</a></li>
         <li><a href="stats.html">Stats</a></li>
-        <li><a href="#">Highlight</a></li>
+        <li><a href="hightlight.html">Highlight</a></li>
       </ul>
       <div class="navContainer-right">
         <div class="navContainer-more">
           <p>More <i class="fa-solid fa-caret-up fa-rotate-180"></i></p>
           <ul class="submore">
-            <li><a href="#">Nhà tài trợ</a></li>
+            <li><a href="#donors">Nhà tài trợ</a></li>
             <li><a href="#">Cầu thủ của trận</a></li>
             <li><a href="#">Huấn luyện viên</a></li>
             <li><a href="#">Trọng tài</a></li>
@@ -126,10 +173,11 @@
             <li><a href="#">Liên hệ với chúng tôi</a></li>
           </ul>
         </div>
-        <div class="divider"></div>
+        <div class="divider divider-1"></div>
         <div class="navContainer-user"><a href="./login-form-prj.html"><i class="fa-solid fa-user"></i></a></div>
         <div class="divider"></div>
-        <div class="navContainer-search"><i id="search-btn" class="fa-solid fa-magnifying-glass"
+        <div class="navContainer-search">
+          <i id="search-btn" class="fa-solid fa-magnifying-glass"
             onclick=showSearch()></i>
           <i id="xmark-btn" class="fa-solid fa-xmark fa-xmark-search" onclick=showXmark()></i>
         </div>
@@ -137,6 +185,9 @@
     </div>
     </div>
   </header>
+  <!-- End header -->
+
+  <!-- Search -->
   <div class="search-container">
     <div class="search-smaller">
       <div class="search-label">
@@ -197,6 +248,8 @@
       </div>
     </div>
   </div>
+  <!-- End search -->
+
   <div class="page-container">
     <h1 class="display extra-magrin">
       FIXTURES
@@ -316,6 +369,28 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div id="donors" class="donors-container">
+    <div class="main-dn">
+      <div class="main-dn-img">
+        <a href="https://caspervietnam.vn/"><img src="./project_image/donors-1.png" alt=""></a>
+      </div>
+      <div class="main-dn-img">
+        <a href="https://samngoclinhkontum.com/gioi-thieu/"><img src="./project_image/donors-2.png" alt=""></a>
+      </div>
+      <div class="main-dn-img">
+        <a href="https://savabeco.com.vn/"><img src="./project_image/donors-3.png" alt=""></a>
+      </div>
+    </div>
+    <div class="divide-dn"></div>
+    <div class="sub-dn">
+      <div class="sub-dn-img">
+        <a href="https://fptplay.vn/"><img src="./project_image/donors-4.png" alt=""></a>
+      </div>
+      <div class="sub-dn-img">
+        <a href="https://dongluc.vn/"><img src="./project_image/donors-5.png" alt=""></a>
       </div>
     </div>
   </div>
